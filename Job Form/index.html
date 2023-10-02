@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/66b25c0a31.js" crossorigin="anonymous"></script>
+    <title>Job Form</title>
+
+   <style>
+    
+     
+   </style>
+
+</head>
+<body>
+
+    <div class="home-page">
+         <div class="form_container">
+            <img src="assets/Img/Home_img.png" alt="home" width="340">
+            <div class="form">
+                <h2>Personal Information</h2> 
+                <hr>
+                <form  name="myForm">
+                <ul>
+                    <li>
+                        <label class="form-title" for="username">Name</label>
+                        <div class="form-flex">
+                            <div>
+                                <input type="text" name="Name" id="username">
+                                <span class="pl">First Name</span>
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" id="username">
+                                <span class="pl">Last Name</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex">
+                            <div>
+                                <label for="phone_number"  class="form-title">Phone Number</label>
+                                <input type="tel" id="phone_number" name="Phone_Number" placeholder="123-456-7890">
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email"  class="form-title" >Email</label>
+                                <input type="text" id="email" name="Email">
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex form-full-flex">
+                            <div class="Address">
+                                <div>
+                                    <label for="address" class="form-title">Address</label>
+                                    <input type="text" id="address"><br>
+                                    <span class="pl">Street Address</span>
+                                </div>
+                                <div>
+                                    <input type="text" id="address"><br>
+                                    <span class="pl">Street Address Line 2</span>
+                                </div>
+                                <div class="form-flex">
+                                    <div>
+                                        <input type="text" id="address" name="City"><br>
+                                        <span class="pl">City</span>
+                                        <div class="error-message">
+                                            <i></i>
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="address" name="State"><br>
+                                        <span class="pl">State/ Province</span>
+                                        <div class="error-message">
+                                            <i></i>
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="text" id="address" name="Post_code"><br>
+                                    <span class="pl"> Postal / Zip Code</span>
+                                    <div class="error-message">
+                                        <i></i>
+                                        <small></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex" style="padding-bottom: 2rem;">
+                            <div>
+                                <label for="contact_time" class="form-title">What is the best time to contact you?</label>
+                                <select class="field s-f" id="contact_time">
+                                    <option value = ""  disabled selected>Please Select</option>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Afternoon">Afternoon</option>
+                                    <option value="Evening">Evening</option>
+                                    <option value="Doesn't Matter">Doesn't Matter</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <hr>
+                    
+                    <li>
+                        <div class="form-flex">
+                            <div>
+                                <label for="S-number" class="form-title">What is your social security number?</label>
+                                <input type="text" name="social" id="S-number">
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <label class="form-title">Are you currently legally entitled to work in the country where the job is based?</label>   
+                        <div class="form-flex">
+                            <div class="flex-radio">
+                                <div>
+                                    <input type="radio" class="radio_input" id="legal_yes" name="legal" value="Yes">
+                                    <label for="legal_yes" class="form-title r-p">Yes</label>
+                                    <div class="error-message error-radio">
+                                        <i></i>
+                                        <small></small>
+                                    </div>
+                                </div>
+
+                                <div style="padding-right: 4rem;">
+                                    <input type="radio" class="radio_input" id="legal_no" name="legal" value="No">
+                                    <label for="legal_no" class="form-title r-p">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex form-full-flex">
+                            <div>
+                                <label for="restriction" class="form-title">If applicable, please detail any restrictions:</label>
+                                <textarea class="field" rows="10" id="restriction"></textarea>
+                            </div>
+                        </div> 
+                    </li>
+
+                    <li>
+                        <label class="form-title">If selected for employment are you willing to submit a background check?</label>   
+                        <div class="form-flex">
+                            <div class="flex-radio">
+                                <div>
+                                    <input type="radio" class="radio_input"><span class="form-title r-p">Yes</span>
+                                </div>
+                                <div style="padding-right: 4rem;">
+                                    <input type="radio"  class="radio_input"><span class="form-title r-p">No</span>
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+
+                    <li>
+                        <h2>Position Information</h2> 
+                        <hr>
+                    </li>
+
+                    <li>
+                        <div class="form-flex">
+                            <div>
+                                <label class="form-title" for="position">What position are you applying for?</label>
+                                <select class="field s-f" id="position" name="Position">
+                                    <option value>Please Select</option>
+                                    <option value="Morning">Sales</option>
+                                    <option value="Afternoon">Marketing</option>
+                                    <option value="Evening">Human Resource</option>
+                                </select>
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="W_time" class="form-title">What is your desired employment?</label>
+                                <select class="field s-f" id="W_time" name="Job_Type">
+                                    <option value>Please Select</option>
+                                    <option value="Morning">Full time</option>
+                                    <option value="Afternoon">Part time</option>
+                                    <option value="Evening">Internship</option>
+                                </select>
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                            <div class="form-flex">
+                                <div>
+                                    <label class="form-title" for="d_pay">What is your desired pay?</label>
+                                    <input type="text" placeholder ="ex: 800 USD" class="s-f" id="d_pay">
+                                    <span class="pl">Monthly</span>
+                                </div>
+                                <div>
+                                    <label for="ready_date" class="form-title">What is your available start date?</label>
+                                    <input type="date" class="s-f" value="DD-MM-YYYY" id="ready_date" name="start_date">
+                                    <span class="pl">Date</span>
+                                </div>
+                            </div>
+                    </li>
+
+                    <li>
+                        <label class="form-title">Have you worked for Company before?</label>   
+                        <div class="form-flex">
+                            <div class="flex-radio">
+                                <div>
+                                    <input type="radio" class="radio_input"><span class="form-title r-p">Yes</span>
+                                </div>
+                                <div style="padding-right: 4rem;">
+                                    <input type="radio"  class="radio_input"><span class="form-title r-p">No</span>
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex form-full-flex">
+                            <div>
+                                <label for="company_details" class="form-title">Please provide your department, manager, the time period you have worked for Company and reason of leave</label>
+                                <textarea class="field" rows="10" id="company_details" name="Previous_company"></textarea>
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+
+                    <li>
+                        <h2 class="section-two">Education</h2> 
+                        <hr>
+                    </li>
+
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label for="clg" class="form-title two-label">College/Institution</label>
+                                <input type="text" id="clg" name="College">
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="dept" class="form-title two-label">Department</label>
+                                <input type="text" id="dept" name="Department">
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label class="form-title two-label">Start Date</label>
+                                <div style="display: flex;gap: 0.4rem;">
+                                    <select class="field s-f sd-1">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-2">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-3">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label class="form-title two-label">End Date</label>
+                                <div style="display: flex;gap: 0.4rem;">
+                                    <select class="field s-f sd-1">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-2">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-3">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h2 class="section-two">Work Experience</h2> 
+                        <hr>
+                    </li>
+
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label for="com" class="form-title two-label">Company</label>
+                                <input type="text" id="com" name="Company">
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label for="pos" class="form-title two-label">position</label>
+                                <input type="text" id="pos" name="Pos">
+                                <div class="error-message">
+                                    <i></i>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label class="form-title two-label">Start Date</label>
+                                <div style="display: flex;gap: 0.4rem;">
+                                    <select class="field s-f sd-1">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-2">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-3">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label class="form-title two-label">End Date</label>
+                                <div style="display: flex;gap: 0.4rem;">
+                                    <select class="field s-f sd-1">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-2">
+                                        <option></option>
+                                    </select>
+                                    <select class="field s-f sd-3">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h2 class="section-two">Qualifications</h2> 
+                        <hr>
+                    </li>
+
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label for="achievements" class="form-title two-label">Achievements</label>
+                                <input type="text" id="achievements">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex e-p">
+                            <div>
+                                <label id="institution" class="form-title two-label">Institution</label>
+                                <input type="text" id="institution">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h2 class="section-two">References</h2> 
+                        <hr>
+                    </li>
+
+                    <li style="padding-bottom: 4rem;">
+                        <div class="form-flex form-grid-flex">
+                            <div>
+                                <label for="reference" class="form-title two-label">Reference Name</label>
+                                <input type="text" id="reference">
+                            </div>
+
+                            <div>
+                                <label for="relationship" class="form-title two-label">Relationship</label>
+                                <select class="field" id="relationship">
+                                    <option></option>
+                                    <option value="Relative">Relative</option>
+                                    <option value="Friend">Friend</option>
+                                    <option value="Colleague">Colleague</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="contact" class="form-title two-label">Contact Information</label>
+                                <input type="text" id="contact">
+                            </div>
+                        </div>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <div class="form-flex form-full-flex">
+                            <div>
+                                <label class="form-title">Please upload your CV here</label>
+                                <div class="drop-container">
+                                    <input type="file">
+                                </div> 
+                            </div>
+                        </div> 
+                    </li>
+
+                    <li>
+                        <div class="form-flex form-full-flex" style="padding-bottom: 2rem;">
+                            <div>
+                                <label class="form-title">Please upload your Resume here</label>
+                                <div class="drop-container">
+                                    <input type="file">
+                                </div> 
+                            </div>
+                        </div> 
+                    </li>
+
+                    <hr>
+
+                    <li>   
+                        <div class="form-flex">
+                            <div class="flex-radio">
+                                <div>
+                                    <input type="checkbox" class="radio_input"><span class="form-title r-p">I agree to <a href="">terms & conditions</a></span>
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-flex">
+                            <div>
+                                <label class="form-title">Date</label>
+                                <input type="text" class="s-f" placeholder="DD-MM-YYYY">
+                            </div>
+                        </div>
+                    </li>
+
+                    <hr>
+
+                    <input type="button" value="submit" class="submit" onclick="validate()">
+                    
+                </ul>
+                </form>
+            </div>
+         </div>
+    </div>
+
+    <script src="assets/js/validate.js"></script>
+    
+</body>
+</html>
